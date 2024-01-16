@@ -7,11 +7,15 @@ import Home from './Pages/Home';
 import Nosotros from './Pages/Nosotros';
 import Contacto from './Pages/Contacto';
 import "../src/index.css"
+import PaginaError from './Pages/PaginaError';
+import Registro from './Pages/Registro';
+import Login from './Pages/Login';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div><Layout /></div>,
+    errorElement: <PaginaError />,
     children: [
       {
         index: true,
@@ -24,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: "/contacto",
         element: <div><Contacto /></div>,
+      },
+      {
+        path: "/registro",
+        element: <div><Registro /></div>,
+      },
+      {
+        path: "/login",
+        element: <div><Login /></div>,
       }
     ]
   },
@@ -35,6 +47,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
+
     <RouterProvider router={router} />
 
   </React.StrictMode>,

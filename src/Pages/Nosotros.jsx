@@ -2,7 +2,7 @@
 function Nosotros() {
   return (
     <>
-      <h1>SOY LA PAGINA NOSOTROS</h1>
+      <h1 className="text-center ">SOY LA PAGINA NOSOTROS</h1>
       
     </>
   )

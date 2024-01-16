@@ -18,7 +18,18 @@
   box-sizing: border-box;
   
 }
-.contenedor {
-  background-color: red;
+ul {
+  list-style: none;
+}
+
+.tdeco{
+  color : red;
+  text-decoration:none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.isPending{
+  color: aqua;
+  text-decoration: none;
 }
 
